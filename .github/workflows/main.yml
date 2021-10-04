@@ -29,11 +29,11 @@ jobs:
           tags: |
             jcqueiroz/rotten-potatoes:latest
             jcqueiroz/rotten-potatoes:${{ github.run_number }} 
- CD:
-   run-ons: ubuntu-latest
+  CD:
+    run-ons: ubuntu-latest
    
-   steps:
-     - uses: actions/checkout@v2 
+    steps:
+      - uses: actions/checkout@v2 
      
      - name: Kubernetes set context
          uses: Azure/k8s-set-context@v1.1
