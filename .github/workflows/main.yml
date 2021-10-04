@@ -30,6 +30,7 @@ jobs:
             jcqueiroz/rotten-potatoes:latest
             jcqueiroz/rotten-potatoes:${{ github.run_number }} 
   CD:
+    need: [CI]
     runs-on: ubuntu-latest
    
     steps:
