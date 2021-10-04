@@ -30,7 +30,7 @@ jobs:
             jcqueiroz/rotten-potatoes:latest
             jcqueiroz/rotten-potatoes:${{ github.run_number }} 
   CD:
-    run-ons: ubuntu-latest
+    runs-ons: ubuntu-latest
    
     steps:
       - uses: actions/checkout@v2 
